@@ -71,6 +71,7 @@
     self.iconImageView = [[UIImageView alloc] init];
     [self.titleView addSubview: self.iconImageView];
     
+    
     self.userNameLabel = [[UILabel alloc] init];
     [self.titleView addSubview:self.userNameLabel];
     
@@ -111,6 +112,10 @@
     NSURL *iconUrl = [NSURL URLWithString: [NSString stringWithFormat:CRBaseIconUrl,suUrlStr]];
     [self.iconImageView sd_setImageWithURL:iconUrl];
     self.iconImageView.frame = CGRectMake(CRMaigin, CRMaigin , 40, 40);
+    
+    self.iconImageView.layer.cornerRadius = self.iconImageView.frame.size.width / 4;
+    self.iconImageView.layer.masksToBounds = YES;
+
     
     
     //用户名称
