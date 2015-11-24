@@ -8,6 +8,11 @@
 
 #import "AppDelegate.h"
 #import "MainTabBarVC.h"
+#import "RESideMenu.h"
+#import "DEMOLeftMenuViewController.h"
+
+
+//#import <UIKit/>
 
 @interface AppDelegate ()
 
@@ -23,7 +28,32 @@
     
     //创建总tabBar
     MainTabBarVC *mainView = [[MainTabBarVC alloc] init];
-    self.window.rootViewController = mainView;
+    
+    
+    //创建侧滑界面
+     DEMOLeftMenuViewController *leftMenuViewController = [[DEMOLeftMenuViewController alloc] init];
+    
+    RESideMenu *sideMenuViewController = [[RESideMenu alloc] init];
+    sideMenuViewController.contentViewController = mainView;
+    sideMenuViewController.leftMenuViewController = leftMenuViewController;
+    sideMenuViewController.backgroundImage = [UIImage imageNamed:@"Stars"];
+    sideMenuViewController.menuPreferredStatusBarStyle = 1; // UIStatusBarStyleLightContent
+//    sideMenuViewController.delegate = self;
+    sideMenuViewController.contentViewShadowColor = [UIColor blackColor];
+    sideMenuViewController.contentViewShadowOffset = CGSizeMake(0, 0);
+    sideMenuViewController.contentViewShadowOpacity = 0.6;
+    sideMenuViewController.contentViewShadowRadius = 12;
+    sideMenuViewController.contentViewShadowEnabled = YES;
+    
+    
+    self.window.rootViewController = sideMenuViewController;
+    
+    
+//    [[UITabBar appearance] setTintColor:[UIColor clearColor]];
+    [[UITabBarItem appearance ] setTitleTextAttributes:@{ NSFontAttributeName :[UIFont systemFontOfSize:12] ,NSForegroundColorAttributeName : [UIColor redColor] } forState:UIControlStateSelected];
+    
+    [[UINavigationBar appearance] setTintColor:[UIColor redColor]];
+    
     
     
     [self.window makeKeyAndVisible];

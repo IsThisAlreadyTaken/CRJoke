@@ -76,6 +76,10 @@
 		5EBC79141BF9D58A0085D1F4 /* UIScrollView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EBC78FF1BF9D58A0085D1F4 /* UIScrollView+MJExtension.m */; settings = {ASSET_TAGS = (); }; };
 		5EBC79151BF9D58A0085D1F4 /* UIScrollView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EBC79011BF9D58A0085D1F4 /* UIScrollView+MJRefresh.m */; settings = {ASSET_TAGS = (); }; };
 		5EBC79161BF9D58A0085D1F4 /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EBC79031BF9D58A0085D1F4 /* UIView+MJExtension.m */; settings = {ASSET_TAGS = (); }; };
+		5EC3CDDD1C043ADD00ED0CE9 /* RECommonFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC3CDD81C043ADD00ED0CE9 /* RECommonFunctions.m */; settings = {ASSET_TAGS = (); }; };
+		5EC3CDDE1C043ADD00ED0CE9 /* RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC3CDDA1C043ADD00ED0CE9 /* RESideMenu.m */; settings = {ASSET_TAGS = (); }; };
+		5EC3CDDF1C043ADD00ED0CE9 /* UIViewController+RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC3CDDC1C043ADD00ED0CE9 /* UIViewController+RESideMenu.m */; settings = {ASSET_TAGS = (); }; };
+		5EC3CDE31C043B6600ED0CE9 /* DEMOLeftMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC3CDE21C043B6600ED0CE9 /* DEMOLeftMenuViewController.m */; settings = {ASSET_TAGS = (); }; };
 		5ED6993A1BFEED2700D19048 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 5ED699011BFEED2700D19048 /* .gitkeep */; settings = {ASSET_TAGS = (); }; };
 		5ED6993B1BFEED2700D19048 /* ImageError.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ED699021BFEED2700D19048 /* ImageError.png */; settings = {ASSET_TAGS = (); }; };
 		5ED6993C1BFEED2700D19048 /* ImageError@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ED699031BFEED2700D19048 /* ImageError@2x.png */; settings = {ASSET_TAGS = (); }; };
@@ -290,6 +294,14 @@
 		5EBC79011BF9D58A0085D1F4 /* UIScrollView+MJRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+MJRefresh.m"; sourceTree = "<group>"; };
 		5EBC79021BF9D58A0085D1F4 /* UIView+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MJExtension.h"; sourceTree = "<group>"; };
 		5EBC79031BF9D58A0085D1F4 /* UIView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJExtension.m"; sourceTree = "<group>"; };
+		5EC3CDD71C043ADD00ED0CE9 /* RECommonFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RECommonFunctions.h; sourceTree = "<group>"; };
+		5EC3CDD81C043ADD00ED0CE9 /* RECommonFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RECommonFunctions.m; sourceTree = "<group>"; };
+		5EC3CDD91C043ADD00ED0CE9 /* RESideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESideMenu.h; sourceTree = "<group>"; };
+		5EC3CDDA1C043ADD00ED0CE9 /* RESideMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESideMenu.m; sourceTree = "<group>"; };
+		5EC3CDDB1C043ADD00ED0CE9 /* UIViewController+RESideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+RESideMenu.h"; sourceTree = "<group>"; };
+		5EC3CDDC1C043ADD00ED0CE9 /* UIViewController+RESideMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+RESideMenu.m"; sourceTree = "<group>"; };
+		5EC3CDE11C043B6600ED0CE9 /* DEMOLeftMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEMOLeftMenuViewController.h; sourceTree = "<group>"; };
+		5EC3CDE21C043B6600ED0CE9 /* DEMOLeftMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEMOLeftMenuViewController.m; sourceTree = "<group>"; };
 		5ED699011BFEED2700D19048 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		5ED699021BFEED2700D19048 /* ImageError.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ImageError.png; sourceTree = "<group>"; };
 		5ED699031BFEED2700D19048 /* ImageError@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ImageError@2x.png"; sourceTree = "<group>"; };
@@ -439,6 +451,7 @@
 		5EA3450C1BF72726006ECAFC /* NetLib */ = {
 			isa = PBXGroup;
 			children = (
+				5EC3CDD61C043ADD00ED0CE9 /* RESideMenu */,
 				5ED699711BFEF00600D19048 /* DACircularProgress */,
 				5ED699691BFEEFD300D19048 /* MBProgressHUD */,
 				5ED698FF1BFEED2700D19048 /* PhotoBro */,
@@ -522,6 +535,7 @@
 				5EBC786A1BF58CA00085D1F4 /* 热门 */,
 				5EBC786B1BF58CA00085D1F4 /* 真相 */,
 				5EBC78691BF58CA00085D1F4 /* 关于 */,
+				5EC3CDE01C043B0F00ED0CE9 /* LeftMenu */,
 				5EBC78621BF588CC0085D1F4 /* MainTab */,
 			);
 			path = Controller;
@@ -736,6 +750,28 @@
 				5EBC78F91BF9D58A0085D1F4 /* MJRefreshStateHeader.m */,
 			);
 			path = Header;
+			sourceTree = "<group>";
+		};
+		5EC3CDD61C043ADD00ED0CE9 /* RESideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				5EC3CDD71C043ADD00ED0CE9 /* RECommonFunctions.h */,
+				5EC3CDD81C043ADD00ED0CE9 /* RECommonFunctions.m */,
+				5EC3CDD91C043ADD00ED0CE9 /* RESideMenu.h */,
+				5EC3CDDA1C043ADD00ED0CE9 /* RESideMenu.m */,
+				5EC3CDDB1C043ADD00ED0CE9 /* UIViewController+RESideMenu.h */,
+				5EC3CDDC1C043ADD00ED0CE9 /* UIViewController+RESideMenu.m */,
+			);
+			path = RESideMenu;
+			sourceTree = "<group>";
+		};
+		5EC3CDE01C043B0F00ED0CE9 /* LeftMenu */ = {
+			isa = PBXGroup;
+			children = (
+				5EC3CDE11C043B6600ED0CE9 /* DEMOLeftMenuViewController.h */,
+				5EC3CDE21C043B6600ED0CE9 /* DEMOLeftMenuViewController.m */,
+			);
+			path = LeftMenu;
 			sourceTree = "<group>";
 		};
 		5ED698FF1BFEED2700D19048 /* PhotoBro */ = {
@@ -1023,6 +1059,8 @@
 				5EBC78B81BF9767C0085D1F4 /* NSObject+MJKeyValue.m in Sources */,
 				5EBC78CA1BF9767C0085D1F4 /* UIView+WebCacheOperation.m in Sources */,
 				5ED699621BFEED2700D19048 /* MWTapDetectingImageView.m in Sources */,
+				5EC3CDDE1C043ADD00ED0CE9 /* RESideMenu.m in Sources */,
+				5EC3CDE31C043B6600ED0CE9 /* DEMOLeftMenuViewController.m in Sources */,
 				5EBC787B1BF595120085D1F4 /* TrueVC.m in Sources */,
 				5EBC78311BF582410085D1F4 /* AppDelegate.m in Sources */,
 				5EBC79101BF9D58A0085D1F4 /* MJRefreshNormalHeader.m in Sources */,
@@ -1087,8 +1125,10 @@
 				5EBC78BA1BF9767C0085D1F4 /* NSString+MJExtension.m in Sources */,
 				5EBC79081BF9D58A0085D1F4 /* MJRefreshHeader.m in Sources */,
 				5EBC79111BF9D58A0085D1F4 /* MJRefreshStateHeader.m in Sources */,
+				5EC3CDDD1C043ADD00ED0CE9 /* RECommonFunctions.m in Sources */,
 				5EBC78681BF589A20085D1F4 /* MainTabBarVC.m in Sources */,
 				5ED6995E1BFEED2700D19048 /* MWGridCell.m in Sources */,
+				5EC3CDDF1C043ADD00ED0CE9 /* UIViewController+RESideMenu.m in Sources */,
 				5ED699631BFEED2700D19048 /* MWTapDetectingView.m in Sources */,
 				5E623CAD1BF727C800AA7635 /* AFNetworkReachabilityManager.m in Sources */,
 				5ED6996F1BFEEFD300D19048 /* MBProgressHUD.m in Sources */,

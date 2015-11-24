@@ -11,6 +11,7 @@
 #import "HotVC.h"
 #import "AboutVC.h"
 #import "TrueVC.h"
+#import "RESideMenu.h"
 
 @interface MainTabBarVC ()
 
@@ -26,24 +27,28 @@
     
     //最新
     NewVC *newVC= [[NewVC alloc] init];
-    UINavigationController *nvNew  = [[UINavigationController alloc] initWithRootViewController:newVC];
+    UINavigationController *nvNew  = [self addBarBtnBy:newVC];
     nvNew.tabBarItem.title =@"最新";
+    [nvNew.tabBarItem setImage:[[UIImage imageNamed:@"red_New"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] ];
     
     
     //热门
     HotVC *hotVC= [[HotVC alloc] init];
-    UINavigationController *nvHot  = [[UINavigationController alloc] initWithRootViewController:hotVC];
+    UINavigationController *nvHot  = [self addBarBtnBy:hotVC];
     nvHot.tabBarItem.title = @"热门";
+    [nvHot.tabBarItem setImage:[[UIImage imageNamed:@"captain"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
 
     //真相
     TrueVC *trueVC= [[TrueVC alloc] init];
-    UINavigationController *nvTrue  = [[UINavigationController alloc] initWithRootViewController:trueVC];
+    UINavigationController *nvTrue  = [self addBarBtnBy:trueVC];
     nvTrue.tabBarItem.title = @"真相";
+    [nvTrue.tabBarItem setImage:[[UIImage imageNamed:@"ironman"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
     
     //关于
     AboutVC *aboutVC= [[AboutVC alloc] init];
-    UINavigationController *nvAbout  = [[UINavigationController alloc] initWithRootViewController:aboutVC];
+    UINavigationController *nvAbout  = [self addBarBtnBy:aboutVC];
     nvAbout.tabBarItem.title = @"关于";
+    [nvAbout.tabBarItem setImage:[[UIImage imageNamed:@"wolverine"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
     
     
 //添加tabBar
@@ -68,5 +73,26 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+
+# pragma mark -- private 
+
+-(UINavigationController *) addBarBtnBy:(UIViewController *)col
+{
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:col];
+    
+    
+    col.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"navigationbar-sidebar"] style:UIBarButtonItemStylePlain target:self action:@selector(onClickMenuButton)];
+    
+    
+    return nav;
+
+}
+
+
+- (void)onClickMenuButton
+{
+    [self.sideMenuViewController presentLeftMenuViewController];
+}
 
 @end
