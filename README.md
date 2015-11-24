@@ -19,8 +19,10 @@
 
 ### 下面放几张 图吧 ，gif可能加载有点慢 （第一次做README.md ）
 
-![image](https://github.com/dsxNiubility/SXNews/raw/master/screenshots/68.gif)<br />
-![image](https://github.com/dsxNiubility/SXNews/raw/master/screenshots/68.gif)<br />
+![image](https://github.com/Chengran888/CRJoke/blob/master/screenPic/fcr1.png)<br />
+![image](https://github.com/Chengran888/CRJoke/blob/master/screenPic/fcr2.png)<br />
+![image](https://github.com/Chengran888/CRJoke/blob/master/screenPic/fcr2.png)<br />
+![image](https://github.com/Chengran888/CRJoke/blob/master/screenPic/Step1.gif)<br />
 
 
 
