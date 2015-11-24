@@ -24,7 +24,9 @@
 ![image](https://github.com/Chengran888/CRJoke/blob/master/screenPic/fcr1.png)<br />
 ![image](https://github.com/Chengran888/CRJoke/blob/master/screenPic/fcr2.png)<br />
 ![image](https://github.com/Chengran888/CRJoke/blob/master/screenPic/fcr3.png)<br />
-![image](https://github.com/Chengran888/CRJoke/blob/master/screenPic/Step1.gif)<br />
+![image](https://github.com/Chengran888/CRJoke/blob/master/screenPic/Step2.gif)<br />
+![image](https://github.com/Chengran888/CRJoke/blob/master/screenPic/Step3.gif)<br />
+![image](https://github.com/Chengran888/CRJoke/blob/master/screenPic/Step5.gif)<br />
 
 
 
